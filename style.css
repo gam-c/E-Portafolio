@@ -11,7 +11,11 @@ h1, h2, h3, h4, h5, h6, span {
     color: #242424;
     text-align: center;
     line-height: 1.25;
-} 
+}
+
+h1 {
+    font-size: 36px;
+}
 
 p {
     line-height: 1.5;
@@ -20,6 +24,24 @@ p {
 
 li {
     list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.row {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.text--purple {
+    color: #6030b1;
 }
 
 /* NAVIGATION BAR */
@@ -62,4 +84,54 @@ nav {
     color: #6030b1;
     margin: 0 12px;
     font-weight: bold;
+}
+
+/* ABOUT ME */
+
+#about-me {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me__info--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    max-width: 600px;
+    margin: 0 auto;  
+    text-align: center;
+}
+
+.about-me__picture--mask {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+    margin-bottom: 28px;
+}
+
+.about-me__picture {
+    width: 100%;
+
+    /* improving my own picture*/
+    transform: scale(1.2);
+    padding-top: 4px;
+}
+
+.about-me__info--title {
+    margin-bottom: 16px;
+}
+
+.about-me__info--para {
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+
+.about-me__link {
+    font-size: 20px;
+    color: #242424;
+    text-decoration: none;
+    padding: 0 16px;
 }
