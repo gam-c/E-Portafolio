@@ -94,6 +94,12 @@ nav {
     flex-direction: column;
 }
 
+.about-me__info {
+    display: flex;
+    flex-direction: column;
+
+}
+
 .about-me__info--container {
     display: flex;
     flex-direction: column;
@@ -115,7 +121,7 @@ nav {
 .about-me__picture {
     width: 100%;
 
-    /* improving my own picture*/
+    /* IMPROVING MY OWN PICTURE */
     transform: scale(1.2);
     padding-top: 4px;
 }
@@ -134,4 +140,14 @@ nav {
     color: #242424;
     text-decoration: none;
     padding: 0 16px;
+}
+
+.about-me__img--container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.about-me__img {
+    width: 100%;
 }
